@@ -17,6 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^cubeapp/', include('cubeapp.urls')),
+    url(r'^', include('cubeapp.urls')),
     url(r'^admin/', admin.site.urls),
 ]

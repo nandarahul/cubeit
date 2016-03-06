@@ -85,7 +85,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 5:
         list_key = sys.argv[5]
 
-    server = 'http://' + HOST + ':' + PORT + '/cubeapp/'
+    server = 'http://' + HOST + ':' + PORT + '/'
 
     user1 = {"name": "a" + suffix, "city": "abad" + suffix}
     user2 = {"name": "b" + suffix, "city": "bad" + suffix}
