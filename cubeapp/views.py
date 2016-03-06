@@ -47,7 +47,7 @@ def createGetCube(request, user_id):
             cube_list=[]
             for cube in cubes:
                 cube_list.append(cube.asDict())
-            cubes_dict = {"cubes":cube_list}
+            cubes_dict = {"data":cube_list}
             return JsonResponse(cubes_dict)
         else:
             message = "User with id %s doesn't exist" %user_id
@@ -89,7 +89,7 @@ def createGetContent(request, user_id):
             content_list=[]
             for content in content_set:
                 content_list.append(content.asDict())
-            return JsonResponse({"contents":content_list})
+            return JsonResponse({"data":content_list})
         else:
             message = "User with id %s doesn't exist" %user_id
     else:
